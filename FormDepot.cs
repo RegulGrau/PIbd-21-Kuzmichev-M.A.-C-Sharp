@@ -6,6 +6,7 @@ namespace FormTyeplovoz
     public partial class FormDepot : Form
     {
         private readonly DepotCollection depotCollection;
+
         public FormDepot()
         {
             InitializeComponent();
@@ -28,16 +29,20 @@ namespace FormTyeplovoz
                 listBoxDepot.SelectedIndex = index;
             }
         }
+        /// <summary>
+        /// Метод отрисовки парковки
+        /// </summary>
         private void Draw()
         {
             if (listBoxDepot.SelectedIndex > -1)
-            {
+            {//если выбран один из пуктов в listBox (при старте программы ни один пункт не будет выбран и может возникнуть ошибка, если мы попытаемся обратиться к элементу listBox)
                 Bitmap bmp = new Bitmap(pictureBoxDepot.Width, pictureBoxDepot.Height);
                 Graphics gr = Graphics.FromImage(bmp);
                 depotCollection[listBoxDepot.SelectedItem.ToString()].Draw(gr);
                 pictureBoxDepot.Image = bmp;
             }
         }
+
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             if (listBoxDepot.SelectedIndex > -1)
@@ -57,6 +62,7 @@ namespace FormTyeplovoz
                 }
             }
         }
+
         private void buttonAddTyeplovoz_Click(object sender, EventArgs e)
         {
             if (listBoxDepot.SelectedIndex > -1)
@@ -81,15 +87,17 @@ namespace FormTyeplovoz
                 }
             }
         }
+
         private void listBoxDepot_SelectedIndexChanged(object sender, EventArgs e)
         {
             Draw();
         }
+
         private void buttonAddDepot_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxDepotName.Text))
             {
-                MessageBox.Show("Введите название парковки", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Введите название депо", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -97,6 +105,7 @@ namespace FormTyeplovoz
             ReloadLevels();
 
         }
+
         private void buttonDeleteDepot_Click(object sender, EventArgs e)
         {
             if (listBoxDepot.SelectedIndex > -1)
@@ -108,6 +117,7 @@ namespace FormTyeplovoz
                 }
             }
         }
+
         private void buttonTake_Click(object sender, EventArgs e)
         {
             if (listBoxDepot.SelectedIndex > -1 && maskedTextBox.Text != "")
