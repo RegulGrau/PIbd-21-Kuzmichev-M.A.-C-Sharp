@@ -2,7 +2,15 @@
 {
 	partial class FormTyeplovoz
 	{
+		/// <summary>
+		/// Обязательная переменная конструктора.
+		/// </summary>
 		private System.ComponentModel.IContainer components = null;
+
+		/// <summary>
+		/// Освободить все используемые ресурсы.
+		/// </summary>
+		/// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
 		protected override void Dispose(bool disposing)
 		{
 			if (disposing && (components != null))
@@ -11,6 +19,7 @@
 			}
 			base.Dispose(disposing);
 		}
+
 		#region Код, автоматически созданный конструктором форм Windows
 
 		/// <summary>
@@ -26,6 +35,7 @@
 			this.buttonDown = new System.Windows.Forms.Button();
 			this.buttonLeft = new System.Windows.Forms.Button();
 			this.buttonUp = new System.Windows.Forms.Button();
+			this.CreateTyeplovozButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBoxTrain)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -96,11 +106,22 @@
 			this.buttonUp.UseVisualStyleBackColor = true;
 			this.buttonUp.Click += new System.EventHandler(this.buttonMove_Click);
 			// 
+			// CreateTyeplovozButton
+			// 
+			this.CreateTyeplovozButton.Location = new System.Drawing.Point(81, 0);
+			this.CreateTyeplovozButton.Name = "CreateTyeplovozButton";
+			this.CreateTyeplovozButton.Size = new System.Drawing.Size(102, 23);
+			this.CreateTyeplovozButton.TabIndex = 6;
+			this.CreateTyeplovozButton.Text = "Create Tyeplowoz";
+			this.CreateTyeplovozButton.UseVisualStyleBackColor = true;
+			this.CreateTyeplovozButton.Click += new System.EventHandler(this.CreateTyeplovozButton_Click);
+			// 
 			// FormTyeplovoz
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(682, 561);
+			this.Controls.Add(this.CreateTyeplovozButton);
 			this.Controls.Add(this.buttonUp);
 			this.Controls.Add(this.buttonLeft);
 			this.Controls.Add(this.buttonDown);
@@ -116,12 +137,14 @@
 		}
 
 		#endregion
+
 		private System.Windows.Forms.PictureBox pictureBoxTrain;
 		private System.Windows.Forms.Button buttonCreate;
 		private System.Windows.Forms.Button buttonRight;
 		private System.Windows.Forms.Button buttonDown;
 		private System.Windows.Forms.Button buttonLeft;
 		private System.Windows.Forms.Button buttonUp;
+		private System.Windows.Forms.Button CreateTyeplovozButton;
 	}
 }
 
