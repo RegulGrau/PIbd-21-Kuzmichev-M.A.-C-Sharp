@@ -12,11 +12,19 @@ namespace FormTyeplovoz
 {
 	public partial class FormTyeplovoz : Form
 	{
-		private Locomotive tyeplovoz;
+		private ILocomotive tyeplovoz;
+
 		public FormTyeplovoz()
 		{
 			InitializeComponent();
 		}
+
+		public void SetLocomotive(ILocomotive tyeplovoz)
+		{
+			this.tyeplovoz = tyeplovoz;
+			Draw();
+		}
+
 		private void Draw()
 		{
 			Bitmap bmp = new Bitmap(pictureBoxTrain.Width, pictureBoxTrain.Height);
@@ -25,23 +33,7 @@ namespace FormTyeplovoz
 			pictureBoxTrain.Image = bmp;
 		}
 
-		private void buttonCreate_Click(object sender, EventArgs e)
-		{
-			Random rnd = new Random();
-			tyeplovoz = new Locomotive(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.DarkSeaGreen);
-			tyeplovoz.SetPosition(rnd.Next(200, 200), rnd.Next(200, 200), pictureBoxTrain.Width, pictureBoxTrain.Height);
-			Draw();
-		}
-
-		private void CreateTyeplovozButton_Click(object sender, EventArgs e)
-		{
-			Random rnd = new Random();
-			tyeplovoz = new Tyeplovoz(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.DarkSeaGreen,
-		   Color.Gray, true, true, true);
-			tyeplovoz.SetPosition(rnd.Next(200, 200), rnd.Next(200, 200), pictureBoxTrain.Width,
-		   pictureBoxTrain.Height);
-			Draw();
-		}
+		
 		private void buttonMove_Click(object sender, EventArgs e)
 		{
 

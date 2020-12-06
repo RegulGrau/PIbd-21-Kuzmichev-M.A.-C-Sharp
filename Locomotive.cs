@@ -1,6 +1,4 @@
 ﻿using System.Drawing;
-using Tyeplovoz;
-
 namespace FormTyeplovoz
 {
 	public class Locomotive : Train
@@ -18,24 +16,28 @@ namespace FormTyeplovoz
 			float step = MaxSpeed * 100 / Weight;
 			switch (direction)
 			{
+				// вправо
 				case Direction.Right:
 					if (_startPosX + step < _pictureWidth - trainWidth)
 					{
 						_startPosX += step;
 					}
 					break;
+				//влево
 				case Direction.Left:
 					if (_startPosX - step > 150)
 					{
 						_startPosX -= step;
 					}
 					break;
+				//вверх
 				case Direction.Up:
 					if (_startPosY - step > 0)
 					{
 						_startPosY -= step;
 					}
 					break;
+				//вниз
 				case Direction.Down:
 					if (_startPosY + step < _pictureHeight - trainHeight)
 					{
@@ -44,7 +46,6 @@ namespace FormTyeplovoz
 					break;
 			}
 		}
-
 		public override void DrawTransport(Graphics g)
 		{
 			Pen pen = new Pen(Color.Black, 4);

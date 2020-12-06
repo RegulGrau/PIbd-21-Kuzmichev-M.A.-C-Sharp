@@ -47,16 +47,7 @@
 			this.pictureBoxTrain.Size = new System.Drawing.Size(682, 561);
 			this.pictureBoxTrain.TabIndex = 0;
 			this.pictureBoxTrain.TabStop = false;
-			// 
-			// buttonCreate
-			// 
-			this.buttonCreate.Location = new System.Drawing.Point(0, 0);
-			this.buttonCreate.Name = "buttonCreate";
-			this.buttonCreate.Size = new System.Drawing.Size(75, 23);
-			this.buttonCreate.TabIndex = 1;
-			this.buttonCreate.Text = "Create";
-			this.buttonCreate.UseVisualStyleBackColor = true;
-			this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
+			
 			// 
 			// buttonRight
 			// 
@@ -105,16 +96,7 @@
 			this.buttonUp.TabIndex = 5;
 			this.buttonUp.UseVisualStyleBackColor = true;
 			this.buttonUp.Click += new System.EventHandler(this.buttonMove_Click);
-			// 
-			// CreateTyeplovozButton
-			// 
-			this.CreateTyeplovozButton.Location = new System.Drawing.Point(81, 0);
-			this.CreateTyeplovozButton.Name = "CreateTyeplovozButton";
-			this.CreateTyeplovozButton.Size = new System.Drawing.Size(102, 23);
-			this.CreateTyeplovozButton.TabIndex = 6;
-			this.CreateTyeplovozButton.Text = "Create Tyeplowoz";
-			this.CreateTyeplovozButton.UseVisualStyleBackColor = true;
-			this.CreateTyeplovozButton.Click += new System.EventHandler(this.CreateTyeplovozButton_Click);
+		
 			// 
 			// FormTyeplovoz
 			// 
