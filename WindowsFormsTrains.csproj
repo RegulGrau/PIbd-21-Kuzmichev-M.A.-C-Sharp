@@ -55,6 +55,12 @@
     <Compile Include="FormDepot.Designer.cs">
       <DependentUpon>FormDepot.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLokomotiveConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLokomotiveConfig.Designer.cs">
+      <DependentUpon>FormLokomotiveConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTyeplovoz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="Tyeplovoz.cs" />
     <EmbeddedResource Include="FormDepot.resx">
       <DependentUpon>FormDepot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLokomotiveConfig.resx">
+      <DependentUpon>FormLokomotiveConfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTyeplovoz.resx">
       <DependentUpon>FormTyeplovoz.cs</DependentUpon>

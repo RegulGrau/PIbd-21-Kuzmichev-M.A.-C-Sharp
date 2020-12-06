@@ -35,10 +35,6 @@ namespace FormTyeplovoz
             {
                 return depotStages[ind];
             }
-            set
-            {
-                depotStages.Add(ind, new Depot<Locomotive>(pictureWidth, pictureHeight));
-            }
         }
     }
 }

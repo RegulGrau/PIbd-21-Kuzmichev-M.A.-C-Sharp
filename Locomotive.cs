@@ -39,13 +39,14 @@ namespace FormTyeplovoz
 					break;
 				//вниз
 				case Direction.Down:
-					if (_startPosY + step < _pictureHeight - trainHeight)
+					if (_startPosY + step < _pictureHeight)
 					{
 						_startPosY += step;
 					}
 					break;
 			}
 		}
+
 		public override void DrawTransport(Graphics g)
 		{
 			Pen pen = new Pen(Color.Black, 4);
@@ -66,7 +67,7 @@ namespace FormTyeplovoz
 			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX + 60, _startPosY + 25, 15, 10);
 			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX + 40, _startPosY + 25, 15, 10);
 			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX + 20, _startPosY + 25, 15, 10);
-			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX, _startPosY + 25, 15, 10);			
+			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX, _startPosY + 25, 15, 10);	
 			g.FillRectangle(mainBrush, _startPosX - 140, _startPosY + 20, 100, 40);
 			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX - 60, _startPosY + 25, 15, 10);
 			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX - 80, _startPosY + 25, 15, 10);
