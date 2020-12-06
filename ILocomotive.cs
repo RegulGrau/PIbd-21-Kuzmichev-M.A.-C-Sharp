@@ -1,7 +1,10 @@
-﻿namespace Tyeplovoz
+﻿using System.Drawing;
+namespace FormTyeplovoz
 {
-	interface ILocomotive
+	public interface ILocomotive
 	{
 		void SetPosition(int x, int y, int width, int height);
+		void MoveTransport(Direction dir);
+		void DrawTransport(Graphics gr);
 	}
 }

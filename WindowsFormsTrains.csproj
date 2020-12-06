@@ -46,7 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Depot.cs" />
     <Compile Include="Direction.cs" />
+    <Compile Include="FormDepot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDepot.Designer.cs">
+      <DependentUpon>FormDepot.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTyeplovoz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +66,9 @@
     <Compile Include="Locomotive.cs" />
     <Compile Include="Train.cs" />
     <Compile Include="Tyeplovoz.cs" />
+    <EmbeddedResource Include="FormDepot.resx">
+      <DependentUpon>FormDepot.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTyeplovoz.resx">
       <DependentUpon>FormTyeplovoz.cs</DependentUpon>
     </EmbeddedResource>

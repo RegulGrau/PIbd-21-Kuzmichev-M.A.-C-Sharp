@@ -1,5 +1,5 @@
 ﻿namespace FormTyeplovoz
-{ 
+{
     public enum Direction
     {
         Up,

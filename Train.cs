@@ -1,6 +1,5 @@
-﻿using FormTyeplovoz;
-using System.Drawing;
-namespace Tyeplovoz
+﻿using System.Drawing;
+namespace FormTyeplovoz
 {
 	public abstract class Train : ILocomotive
 	{
