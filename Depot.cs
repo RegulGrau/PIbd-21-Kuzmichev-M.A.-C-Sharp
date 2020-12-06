@@ -1,9 +1,11 @@
-﻿using System.Drawing;
+﻿using System.Collections.Generic;
+using System.Drawing;
 namespace FormTyeplovoz
 {
 	public class Depot<T> where T : class, ILocomotive
 	{
-		private readonly T[] _places;
+		private readonly List<T> _places;
+		private readonly int _maxCount;
 		private readonly int pictureWidth;
 		private readonly int pictureHeight;
 		private readonly int _placeSizeWidth = 500;
@@ -12,37 +14,37 @@ namespace FormTyeplovoz
 		{
 			int width = picWidth / _placeSizeWidth;
 			int height = picHeight / _placeSizeHeight;
-			_places = new T[width * height];
+			_maxCount = width * height;
 			pictureWidth = picWidth;
 			pictureHeight = picHeight;
+			_places = new List<T>();
 		}
 		public static bool operator +(Depot<T> p, T train)
 		{
-			for(int i=0;i< p._places.Length;i++)
+			if (p._places.Count >= p._maxCount)
 			{
-				if (p._places[i]==null)
-				{
-					p._places[i] = train;
-					return true;
-				}
+				return false;
 			}
-			return false;
+			p._places.Add(train);
+			return true;
 		}
 		public static T operator -(Depot<T> p, int index)
 		{
-			if (index > p._places.Length)
+			if (index+1 < -1 || index+1 > p._places.Count)
+			{
 				return null;
-			T obj = p._places[index];
-			p._places[index] = null;
-			return obj;
+			}
+			T train = p._places[index];
+			p._places.RemoveAt(index);
+			return train;
 		}
 		public void Draw(Graphics g)
 		{
 			DrawMarking(g);
-			for (int i = 0; i < _places.Length; i++)
+			for (int i = 0; i < _places.Count; i++)
 			{
 				//корректировка положения
-				_places[i]?.SetPosition(i / (pictureWidth / _placeSizeWidth * 2) * _placeSizeWidth + 150, i % (pictureWidth / _placeSizeWidth * 2) * _placeSizeHeight + 10, pictureWidth, pictureHeight);
+				_places[i]?.SetPosition(i / (pictureWidth / _placeSizeWidth*2) * _placeSizeWidth+150, i % (pictureWidth / _placeSizeWidth*2) * _placeSizeHeight+10, pictureWidth, pictureHeight);
 				_places[i]?.DrawTransport(g);
 			}
 		}

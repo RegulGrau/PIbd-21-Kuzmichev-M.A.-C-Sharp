@@ -19,7 +19,7 @@ namespace FormTyeplovoz
 			InitializeComponent();
 		}
 
-		public void SetLocomotive(ILocomotive tyeplovoz)
+		public void SetLocomotive(Locomotive tyeplovoz)
 		{
 			this.tyeplovoz = tyeplovoz;
 			Draw();

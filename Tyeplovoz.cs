@@ -8,7 +8,7 @@ namespace FormTyeplovoz
 		public bool Chimney { private set; get; }
 		public bool SportLine { private set; get; }
 		public Tyeplovoz(int maxSpeed, float weight, Color mainColor, Color dopColor,
-	   bool frontBamper, bool chimney, bool line) : base(maxSpeed, weight, mainColor)
+	    bool frontBamper, bool chimney, bool line) : base(maxSpeed, weight, mainColor)
 		{
 			DopColor = dopColor;
 			FrontBamper = frontBamper;
@@ -19,11 +19,13 @@ namespace FormTyeplovoz
 		{
 			base.DrawTransport(g);
 			Pen pen = new Pen(Color.Black, 4); Brush wheell = new SolidBrush(Color.Black);
+
 			if (FrontBamper)
 			{
 				g.DrawLine(pen, _startPosX + 80, _startPosY + 40, _startPosX + 80, _startPosY + 60);
 				g.DrawLine(pen, _startPosX + 80, _startPosY + 40, _startPosX + 100, _startPosY + 60);
 				g.DrawLine(pen, _startPosX + 80, _startPosY + 60, _startPosX + 100, _startPosY + 60);
+
 			}
 			pen = new Pen(Color.DarkSeaGreen);
 			Brush mainBrush = new SolidBrush(MainColor);
