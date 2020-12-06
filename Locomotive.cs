@@ -66,7 +66,7 @@ namespace FormTyeplovoz
 			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX + 60, _startPosY + 25, 15, 10);
 			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX + 40, _startPosY + 25, 15, 10);
 			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX + 20, _startPosY + 25, 15, 10);
-			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX, _startPosY + 25, 15, 10);	
+			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX, _startPosY + 25, 15, 10);			
 			g.FillRectangle(mainBrush, _startPosX - 140, _startPosY + 20, 100, 40);
 			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX - 60, _startPosY + 25, 15, 10);
 			g.FillRectangle(new SolidBrush(Color.DeepSkyBlue), _startPosX - 80, _startPosY + 25, 15, 10);

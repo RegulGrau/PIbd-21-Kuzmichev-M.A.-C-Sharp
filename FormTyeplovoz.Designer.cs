@@ -30,12 +30,12 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTyeplovoz));
 			this.pictureBoxTrain = new System.Windows.Forms.PictureBox();
-			this.buttonCreate = new System.Windows.Forms.Button();
+			//this.buttonCreate = new System.Windows.Forms.Button();
 			this.buttonRight = new System.Windows.Forms.Button();
 			this.buttonDown = new System.Windows.Forms.Button();
 			this.buttonLeft = new System.Windows.Forms.Button();
 			this.buttonUp = new System.Windows.Forms.Button();
-			this.CreateTyeplovozButton = new System.Windows.Forms.Button();
+			//this.CreateTyeplovozButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBoxTrain)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -103,12 +103,12 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(682, 561);
-			this.Controls.Add(this.CreateTyeplovozButton);
+			
 			this.Controls.Add(this.buttonUp);
 			this.Controls.Add(this.buttonLeft);
 			this.Controls.Add(this.buttonDown);
 			this.Controls.Add(this.buttonRight);
-			this.Controls.Add(this.buttonCreate);
+			
 			this.Controls.Add(this.pictureBoxTrain);
 			this.Name = "FormTyeplovoz";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -121,12 +121,12 @@
 		#endregion
 
 		private System.Windows.Forms.PictureBox pictureBoxTrain;
-		private System.Windows.Forms.Button buttonCreate;
+		
 		private System.Windows.Forms.Button buttonRight;
 		private System.Windows.Forms.Button buttonDown;
 		private System.Windows.Forms.Button buttonLeft;
 		private System.Windows.Forms.Button buttonUp;
-		private System.Windows.Forms.Button CreateTyeplovozButton;
+		
 	}
 }
 

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 namespace FormTyeplovoz
 {
 	static class Program
-	{ 
+	{
 		[STAThread]
 		static void Main()
 		{
