@@ -6,7 +6,6 @@ namespace FormTyeplovoz
     public partial class FormDepot : Form
     {
         private readonly DepotCollection depotCollection;
-
         public FormDepot()
         {
             InitializeComponent();
@@ -29,70 +28,44 @@ namespace FormTyeplovoz
                 listBoxDepot.SelectedIndex = index;
             }
         }
-        /// <summary>
-        /// Метод отрисовки парковки
-        /// </summary>
         private void Draw()
         {
             if (listBoxDepot.SelectedIndex > -1)
-            {//если выбран один из пуктов в listBox (при старте программы ни один пункт не будет выбран и может возникнуть ошибка, если мы попытаемся обратиться к элементу listBox)
+            {
                 Bitmap bmp = new Bitmap(pictureBoxDepot.Width, pictureBoxDepot.Height);
                 Graphics gr = Graphics.FromImage(bmp);
                 depotCollection[listBoxDepot.SelectedItem.ToString()].Draw(gr);
                 pictureBoxDepot.Image = bmp;
             }
         }
-
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            if (listBoxDepot.SelectedIndex > -1)
-            {
-                ColorDialog dialog = new ColorDialog();
-                if (dialog.ShowDialog() == DialogResult.OK)
-                {
-                    var train = new Locomotive(100, 1000, dialog.Color);
-                    if (depotCollection[listBoxDepot.SelectedItem.ToString()] + train)
-                    {
-                        Draw();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Депо переполнено");
-                    }
-                }
-            }
+            var formLokomotiveConfig = new FormLokomotiveConfig();
+            formLokomotiveConfig.AddEvent(AddTrain);
+            formLokomotiveConfig.Show();
         }
 
-        private void buttonAddTyeplovoz_Click(object sender, EventArgs e)
+        private Locomotive AddTrain(Locomotive train)
         {
-            if (listBoxDepot.SelectedIndex > -1)
+            if (train != null && listBoxDepot.SelectedIndex > -1)
             {
-                ColorDialog dialog = new ColorDialog();
-                if (dialog.ShowDialog() == DialogResult.OK)
+                if ((depotCollection[listBoxDepot.SelectedItem.ToString()]) + train)
                 {
-
-                    ColorDialog dialogDop = new ColorDialog();
-                    if (dialogDop.ShowDialog() == DialogResult.OK)
-                    {
-                        var train = new Tyeplovoz(100, 1000, dialog.Color, dialogDop.Color, true, true, true);
-                        if (depotCollection[listBoxDepot.SelectedItem.ToString()] + train)
-                        {
-                            Draw();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Депо переполнено");
-                        }
-                    }
+                    
+                    Draw();
+                    return train;
+                }
+                else
+                {
+                    MessageBox.Show("Поезд не удалось поставить");
                 }
             }
+            return null;
         }
-
         private void listBoxDepot_SelectedIndexChanged(object sender, EventArgs e)
         {
             Draw();
         }
-
         private void buttonAddDepot_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxDepotName.Text))
@@ -105,7 +78,6 @@ namespace FormTyeplovoz
             ReloadLevels();
 
         }
-
         private void buttonDeleteDepot_Click(object sender, EventArgs e)
         {
             if (listBoxDepot.SelectedIndex > -1)
@@ -130,6 +102,43 @@ namespace FormTyeplovoz
                     form.ShowDialog();
                 }
                 Draw();
+            }
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                if (depotCollection.SaveData(saveFileDialog.FileName))
+                {
+                   MessageBox.Show("Successfully saved", "Result",
+                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Saving error", "Result",
+                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+        }
+
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                if (depotCollection.LoadData(openFileDialog.FileName))
+                {
+                    MessageBox.Show("Loaded", "Result", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+                    ReloadLevels();
+                    Draw();
+                }
+                else
+                {
+                    MessageBox.Show("Loading error", "Result", MessageBoxButtons.OK,
+                   MessageBoxIcon.Error);
+                }
             }
         }
     }

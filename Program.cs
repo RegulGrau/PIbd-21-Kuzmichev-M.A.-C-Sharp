@@ -2,8 +2,9 @@
 using System.Windows.Forms;
 namespace FormTyeplovoz
 {
-	static class Program
+	public static class Program
 	{
+		public delegate void Func(Locomotive train, Locomotive train2);
 		[STAThread]
 		static void Main()
 		{

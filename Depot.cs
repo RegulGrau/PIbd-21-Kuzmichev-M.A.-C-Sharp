@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
+
 namespace FormTyeplovoz
 {
 	public class Depot<T> where T : class, ILocomotive
@@ -59,6 +60,14 @@ namespace FormTyeplovoz
 				}
 				g.DrawLine(pen, i * _placeSizeWidth, 0, i * _placeSizeWidth, (pictureHeight / _placeSizeHeight) * _placeSizeHeight);
 			}
+		}
+		public T GetNext(int index)
+		{
+			if (index < 0 || index >= _places.Count)
+			{
+				return null;
+			}
+			return _places[index];
 		}
 	}
 }
