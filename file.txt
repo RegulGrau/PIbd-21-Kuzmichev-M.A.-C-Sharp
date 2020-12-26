@@ -1,0 +1,94 @@
+2020-12-11 14:02:39.1855|INFO|FormTyeplovoz.FormDepot|Загружено из файла C:\Users\User\Desktop\404.txt
+2020-12-11 14:02:39.2084|INFO|FormTyeplovoz.FormDepot|Перешли к депо 1
+2020-12-11 14:03:07.3796|WARN|FormTyeplovoz.FormDepot|Переполнение
+2020-12-11 14:03:16.6557|WARN|FormTyeplovoz.FormDepot|Поезда не найдено
+2020-12-11 14:03:23.2182|INFO|FormTyeplovoz.FormDepot|Добавили депо 2
+2020-12-11 14:03:23.2182|INFO|FormTyeplovoz.FormDepot|Перешли к депо 1
+2020-12-11 14:03:25.1865|INFO|FormTyeplovoz.FormDepot|Перешли к депо 2
+2020-12-11 14:03:27.3363|INFO|FormTyeplovoz.FormDepot|Удалили депо 1
+2020-12-11 14:03:27.3363|INFO|FormTyeplovoz.FormDepot|Перешли к депо 1
+2020-12-11 14:03:29.8875|INFO|FormTyeplovoz.FormDepot|Удалили депо 0
+2020-12-11 14:03:29.8895|INFO|FormTyeplovoz.FormDepot|Перешли к депо 1
+2020-12-11 14:06:25.6686|INFO|FormTyeplovoz.FormDepot|Загружено из файла C:\Users\User\Desktop\404.txt
+2020-12-11 14:06:25.6917|INFO|FormTyeplovoz.FormDepot|Перешли к депо 1
+2020-12-11 14:08:09.3921|INFO|FormTyeplovoz.FormDepot|Загружено из файла C:\Users\User\Desktop\404.txt
+2020-12-11 14:08:09.4223|INFO|FormTyeplovoz.FormDepot|Перешли к депо 1
+2020-12-11 14:08:17.7048|WARN|FormTyeplovoz.FormDepot|Переполнение
+2020-12-11 14:08:23.4231|WARN|FormTyeplovoz.FormDepot|Поезда не найдено
+2020-12-11 14:33:25.4646|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-11 14:33:25.4958|INFO|FormTyeplovoz.FormDepot|Перешли к депо 1
+2020-12-11 15:38:22.8306|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-11 15:38:22.8619|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-11 15:38:48.6586|INFO|FormTyeplovoz.FormDepot|Сортировка уровней
+2020-12-11 15:42:00.8850|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-11 15:42:00.9006|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-11 15:47:01.2968|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-11 15:47:01.3280|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-11 15:47:45.8291|INFO|FormTyeplovoz.FormDepot|Сортировка уровней
+2020-12-11 15:49:52.7537|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-11 15:49:52.7849|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-11 15:52:42.2691|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-11 15:52:42.3003|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-11 15:55:18.6102|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-11 15:55:18.6322|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-11 15:58:18.1091|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-11 15:58:18.1247|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-11 15:58:38.4955|INFO|FormTyeplovoz.FormDepot|Сортировка уровней
+2020-12-11 16:01:51.1616|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-11 16:01:51.1835|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-11 16:02:55.1935|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-11 16:02:55.2247|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-11 16:03:44.5641|INFO|FormTyeplovoz.FormDepot|Сортировка уровней
+2020-12-22 13:20:09.1319|INFO|FormTyeplovoz.FormDepot|Загружено из файла C:\Users\User\Desktop\11.txt
+2020-12-22 13:20:09.1917|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:20:10.8349|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:20:11.7106|INFO|FormTyeplovoz.FormDepot|Перешли к депо11
+2020-12-22 13:20:12.3672|INFO|FormTyeplovoz.FormDepot|Перешли к депо111
+2020-12-22 13:20:13.3626|INFO|FormTyeplovoz.FormDepot|Перешли к депо11
+2020-12-22 13:20:17.4383|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:20:19.5865|INFO|FormTyeplovoz.FormDepot|Перешли к депо11
+2020-12-22 13:20:20.2308|INFO|FormTyeplovoz.FormDepot|Перешли к депо11
+2020-12-22 13:20:21.2630|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:21:34.5957|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:21:34.6177|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:22:12.8604|INFO|FormTyeplovoz.FormDepot|Сортировка уровней
+2020-12-22 13:25:15.9247|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:25:15.9506|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:28:48.8150|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:28:48.8370|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:30:25.9388|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:30:25.9628|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:31:15.1084|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:31:15.1303|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:36:08.3026|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:36:08.3265|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:41:45.8311|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:41:45.8547|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:45:29.8495|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:45:29.8755|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:49:32.9337|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:49:32.9566|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:50:21.5255|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:50:21.5474|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:51:59.9689|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:51:59.9929|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:56:54.4490|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:56:54.4720|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 13:57:43.5211|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 13:57:43.5430|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 14:02:55.1638|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 14:02:55.1857|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 14:16:29.5548|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 14:16:29.5778|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 14:21:04.8338|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 14:21:04.8568|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 14:22:14.1221|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 14:22:14.1481|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 14:23:30.4573|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 14:23:30.4802|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 14:24:45.0209|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 14:24:45.0449|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 14:28:59.0331|INFO|FormTyeplovoz.FormDepot|Добавили депо 1
+2020-12-22 14:28:59.0580|INFO|FormTyeplovoz.FormDepot|Перешли к депо1
+2020-12-22 14:29:41.4513|INFO|FormTyeplovoz.FormDepot|Сортировка уровней
+2020-12-22 14:30:34.4730|INFO|FormTyeplovoz.FormDepot|Сортировка уровней
